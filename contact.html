@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <div class="max-w-5xl mx-auto px-6 py-12 bg-white shadow-lg rounded-lg mt-10">
+    <h1 class="text-3xl font-bold mb-4">Contact Us</h1>
+    <p class="mb-8 text-gray-600">
+      We'd love to hear from you! Reach out with questions or booking inquiries—we'll get back to you soon.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      
+      <!-- Contact Info -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Contact Information</h2>
+        <div class="mb-3">
+          <p class="font-medium">Phone</p>
+          <p>+264 81 234 5678</p>
+        </div>
+        <div class="mb-3">
+          <p class="font-medium">Email</p>
+          <p>info@jmteamguesthouse.com</p>
+        </div>
+        <div class="mb-3">
+          <p class="font-medium">Address</p>
+          <p>16 Parsely Str, DRC.<br>Swakopmund</p>
+        </div>
+
+        <div class="mt-6">
+          <h2 class="text-xl font-semibold mb-2">Find Us</h2>
+          <img src="https://maps.googleapis.com/maps/api/staticmap?center=Green+Hills&zoom=14&size=300x150&markers=color:red%7CGreen+Hills" alt="Map" class="rounded-md">
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Send Us a Message</h2>
+        <form action="https://formspree.io/f/mjkwnobr" method="POST" class="space-y-4">
+            <input type="hidden" name="_redirect" value="https://example.com/thank-you.html" />
+          <div>
+            <label for="name" class="block text-sm font-medium mb-1">Name</label>
+            <input type="text" name="name" id="name" class="w-full border border-gray-300 rounded px-3 py-2" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium mb-1">Email</label>
+            <input type="email" name="email" id="email" required class="w-full border border-gray-300 rounded px-3 py-2" />
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium mb-1">Message</label>
+            <textarea name="message" id="message" rows="4" required class="w-full border border-gray-300 rounded px-3 py-2"></textarea>
+          </div>
+          <button type="submit" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
