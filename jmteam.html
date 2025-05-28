@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JM TEAM Guesthouse</title>
+  <link rel="stylesheet" href="css/style.css" />
+<style>
+ /* Base */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  color: #111;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar nav a {
+  margin: 0 1rem;
+  padding-bottom: 4px;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar nav a.active {
+  color: crimson;
+  border-color: crimson;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.hero-image {
+  width: 100%;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.5));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.hero-overlay h2 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.brand {
+  color: orange;
+}
+
+/* Features */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.features span {
+  background-color: rgba(255,255,255,0.7);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+
+/* Book Now Button */
+.btn {
+  align-self: flex-end;
+  background-color: #ddd;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+/* About */
+.about {
+  padding: 2rem;
+  font-size: 1.25rem;
+}
+.about h3 {
+  text-decoration: underline;
+}
+</style>
+
+</head>
+<body>
+  <header>
+    <h1>JM TEAM Guesthouse</h1>
+  <!-- Navbar -->
+  <header class="navbar">
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">Rooms</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+      <a href="#">Reviews</a>
+    </nav>
+  </header>
+
+
+  <main>
+   <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/guesthouse.jpg" alt="Guesthouse" class="hero-image">
+    <div class="hero-overlay">
+      <h2>Welcome to <br><span class="brand">JM TEAM GUESTHOUSE</span></h2>
+
+      <div class="features">
+        <span>Homely Ambience</span>
+        <span>Essential Amenities</span>
+        <span>Cultural Experience</span>
+        <span>Youtubers +</span>
+      </div>
+
+      <a href="#" class="btn">BOOK NOW</a>
+    </div>
+  </section>
+
+    <!-- About Section -->
+  <section class="about">
+    <h3>About us</h3>
+  </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 JM TEAM Guesthouse</p>
+  </footer>
+</body>
+</html>
+
+
